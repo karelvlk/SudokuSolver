@@ -17,7 +17,7 @@ sh run.sh
 2. Pomocí lokálního GHC kompilátoru příkazem uvnitř `src/` složky:
 
 ```sh
-runghc main.hs.
+runghc main.hs
 ```
 
 Po spuštění aplikace se objeví uvítací zpráva a výzva k výběru módu:
@@ -68,12 +68,12 @@ Generování nové Sudoku hádanky probíhá v modulu `generator.hs`. Základem 
 
 #### Validace Sudoku
 
-Modul checker.hs obsahuje funkce pro validaci řešení Sudoku. Funkce `check` přijímá mřížku Sudoku a ověřuje, zda je řešením platného Sudoku. Pro ověření platnosti řešení se kontroluje, zda jsou splněna pravidla Sudoku, tj. žádné číslo se neopakuje ve stejném řádku, sloupci nebo v bloku 3x3.
+Modul `checker.hs` obsahuje funkce pro validaci řešení Sudoku. Funkce `check` přijímá mřížku Sudoku a ověřuje, zda je řešením platného Sudoku. Pro ověření platnosti řešení se kontroluje, zda jsou splněna pravidla Sudoku, tj. žádné číslo se neopakuje ve stejném řádku, sloupci nebo v bloku 3x3.
 
 #### Manipulace s vstupem a výstupem
 
-Modul utils.hs obsahuje funkce pro čtení a zápis mřížky Sudoku ze souboru a také pro tisk Sudoku do konzole. Funkce `loadGrid` načte mřížku ze souboru a převede ji na interní reprezentaci v programu. Funkce saveGrid uloží mřížku do souboru. Funkce `printGrid` tiskne mřížku Sudoku do konzole.
+Modul `utils.hs` obsahuje funkce pro čtení a zápis mřížky Sudoku ze souboru a také pro tisk Sudoku do konzole. Funkce `loadGrid` načte mřížku ze souboru a převede ji na interní reprezentaci v programu. Funkce saveGrid uloží mřížku do souboru. Funkce `printGrid` tiskne mřížku Sudoku do konzole.
 
 ## Závěr
 
-Sudoku Solver Haskell App je aplikace pro řešení, generování a kontrolu úloh Sudoku. Aplikace je navržena tak, aby byla snadno použitelná a flexibilní, a umožňuje uživatelům vybrat mezi různými módy a možnostmi. Uživatelé si mohou vybrat, jak zadat nebo načíst úlohy Sudoku, a mohou také nastavit různé parametry pro generování úloh. Výsledkem je nástroj, který usnadňuje řešení, generování a kontrolu úloh Sudoku.
+Sudoku Solver je aplikace pro řešení, generování a kontrolu úloh Sudoku. Aplikace je navržena tak, aby byla snadno použitelná a flexibilní, a umožňuje uživatelům vybrat mezi různými módy a možnostmi. Uživatelé si mohou vybrat, jak zadat nebo načíst úlohy Sudoku, a mohou také nastavit různé parametry pro generování úloh. Výsledkem je nástroj, který usnadňuje řešení, generování a kontrolu úloh Sudoku.
