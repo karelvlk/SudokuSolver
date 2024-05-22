@@ -18,7 +18,7 @@ RUN cabal update && cabal install random random-shuffle directory --lib
 
 # Compile the Haskell application including all modules
 # Make sure to link with the necessary packages using the -package option
-RUN ghc -o myapp -package random -package random-shuffle -package directory \
+RUN ghc -O2 -o myapp -package random -package random-shuffle -package directory \
     main.hs solver.hs generator.hs checker.hs types.hs utils.hs
 
 # Run the Haskell application when the container launches
